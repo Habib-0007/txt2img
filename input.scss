@@ -1,0 +1,64 @@
+$main-color: hsl(196, 63.6%, 23.7%);
+$white: rgb(255, 255, 255);
+
+* {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fredoka", sans-serif;
+}
+
+@mixin centered-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin def-color {
+	background: $main-color;
+	color: $white;
+}
+
+header {
+	@include centered-display;
+	@include def-color;
+	text-align: center;
+	padding-block: 16px;
+	h1 {
+		font-size: 1.8em;
+	}
+}
+
+.question-area {
+	margin: 50px auto;
+	@include centered-display;
+	.form {
+		width: 90%;
+		max-width: 500px;
+		position: relative;
+		input {
+			border: 2px solid #000;
+			width: 100%;
+			border-radius: 6px;
+			font-size: 1.2em;
+			padding: 10px 16px;
+			padding-right: 60px;
+		}
+		button {
+			height: 48px;
+			width: 54px;
+			border-radius: 6px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: 2px solid $main-color;
+			@include def-color;
+			@include centered-display;
+			i {
+				font-size: 1.6em;
+			}
+		}
+	}
+}

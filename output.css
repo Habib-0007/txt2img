@@ -1,0 +1,60 @@
+* {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(196, 63.6%, 23.7%);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-block: 16px;
+}
+header h1 {
+  font-size: 1.8em;
+}
+
+.question-area {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question-area .form {
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.question-area .form input {
+  border: 2px solid #000;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1.2em;
+  padding: 10px 16px;
+  padding-right: 60px;
+}
+.question-area .form button {
+  height: 48px;
+  width: 54px;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid hsl(196, 63.6%, 23.7%);
+  background: hsl(196, 63.6%, 23.7%);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question-area .form button i {
+  font-size: 1.6em;
+}
+
+/*# sourceMappingURL=output.css.map */
