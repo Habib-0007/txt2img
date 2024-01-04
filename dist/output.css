@@ -80,8 +80,37 @@ header h1 {
   height: 80%;
   margin: 0 auto;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.spinner {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+.spinner div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid hsl(196, 63.6%, 23.7%);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spinnerOne 1.2s linear infinite;
+}
+
+@keyframes spinnerOne {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 footer {
   display: flex;
   justify-content: center;
