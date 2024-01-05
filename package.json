@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style": "sass --watch input.scss dist/output.css",
+    "js": "tsc -w"
   },
   "keywords": [],
   "author": "",

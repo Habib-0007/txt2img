@@ -42,7 +42,7 @@ header {
 	margin: 50px auto;
 	@include centered-display;
 	.form {
-		width: 90%;
+		width: 100%;
 		max-width: 500px;
 		display: flex;
 		justify-content: space-between;
@@ -97,7 +97,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		border: 10px solid $main-color;
+		border: 5px solid $main-color;
 		border-bottom-color: transparent;
 		border-radius: 50%;
 		animation: spinnerOne 1.2s linear infinite;
